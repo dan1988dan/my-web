@@ -1,0 +1,270 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------KONTENER W KTÓRYM JEST STRONA NA ŚRODKU-----------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main-container {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #E5E3DA;
+	border-bottom: 1px solid #DDD;
+	border-radius: 2px;
+	box-shadow: 0 0 6px #E0DED5;
+	margin: 0 auto;
+	width: 78%;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------KONIEC KONTENERA W KTÓRYM JEST STRONA NA ŚRODKU-------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------MENU ROZWIJANE DLA PC------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+      /* usunięcie domyślnych właściwości CSS z elementów - ol - oraz - ul */
+      #menu, #menu ul, #menu ol {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+      /* wygląd głównego elementu - ol */
+      #menu {
+        background-color:#FFF;
+        font-size:15px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+      }
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      #menu a {
+        display:block;
+        text-decoration:none;
+		font-weight:bold;
+        color:white;
+        padding:0 5px;
+		letter-spacing:2px;
+      }
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      #menu > li {
+        float:left;
+        width:150px;
+        margin-left:1px;
+        background-color:green;
+        height:2em;
+      }
+      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      #menu > li:first-child {
+        margin-left:0;
+      }
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover {
+        background-color:grey;
+      }
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover > a {
+        color:#09C;
+      }
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover > ul {
+        display:block;
+      }
+
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-1----------------------- */
+
+      /* wygląd głównych rozwijanych elementów - ul */
+      #menu > li > ul {
+        display:none;
+      }
+      /* wygląd elementu - li - w części rozwijanej */
+      #menu > li > ul > li {
+        position:relative;
+        background-color:green;
+      }
+      /* wygląd elementu - a - w części rozwijanej */
+      #menu > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      #menu > li > ul > li:hover {
+        background-color:#DDD;
+      }
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      #menu > li > ul > li:hover > a {
+        color:#09C;
+      }
+
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol {
+        display:none;
+        width:150%;
+        position:absolute;
+        left:100%;
+        margin-top:-2em;
+      }
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+      #menu > li > ul > li:hover > ol {
+        display:block;
+      }
+      /* wygląd elementów - li - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol > li {
+        background-color:#CCC;
+      }
+      /* wygląd elementów - a - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol > li > a {
+        border-top:1px solid #FFF;
+        border-left:1px solid #FFF;
+      }
+      /* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+      #menu > li > ul > li > ol > li > a:hover {
+        color:#09C;
+      }
+
+
+      /* ------------------------WSPÓLNE----------------------- */
+
+      /* zaokrąglone rogi wszystkich elementów - li - oraz - a */
+      #menu li, ol a {
+        border-radius:0px;
+      }
+      /* strzałka w prawo */
+      #menu .dol {
+        background-image:url('https://webkod.pl/images/down.png');
+        background-repeat:no-repeat;
+        background-position:98% center;
+      }
+      /* strzałka w dół */
+      #menu .prawo {
+        background-image:url('https://webkod.pl/images/right.png');
+        background-repeat:no-repeat;
+        background-position:98% center;
+      }
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------KONIEC MENU ROZWIJANEGO DLA PC-------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+ #rodzic {
+        background-color:transparent;
+        border:0px;
+        font-size:1.4em;
+      }
+
+      #rodzic:after {
+        content:'';
+        display:block;
+        clear:both;
+      }
+
+      #logo {
+        float:left;
+        width:15%;
+		padding:0px 10px;
+      }
+      #serwisy {
+        float:right;
+		width:60%;
+		display:block;
+		margin-top:40px;
+		padding:0px 20px;
+      }
+      #fb {
+        float:right;
+		width:5%;
+		padding:3px 7px;
+      }
+	  #instagram {
+        float:right;
+        width:5%;
+		padding:3px 7px;
+      }
+	   #tweeter {
+        float:right;
+        width:5%;
+		padding:3px 7px;
+      }
+	   #youtube {
+        float:right;
+        width:6.5%;
+		padding:3px 7px;
+      }
+	   #mail {
+        float:right;
+        width:6.4%;
+		padding:3px 7px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ #rodzic {
+        background-color:transparent;
+        border:0px;
+        font-size:1.4em;
+      }
+
+      #rodzic:after {
+        content:'';
+        display:block;
+        clear:both;
+      }
+
+      #dziecko1 {
+        float:left;
+        width:18%;
+      }
+
+      #dziecko2 {
+        float:right;
+        width:4%;
+		margin:30px 20px;
+      }
+	  #dziecko3 {
+        float:right;
+        width:4%;
+		padding:30px 20px;
+      }
+*/
