@@ -7,7 +7,7 @@
 	border: 4px solid #E5E3DA;
 	border-bottom: 1px solid #DDD;
 	border-radius: 10px;
-	box-shadow: 0 0 6px #E0DED5;
+	box-shadow: 0 0 6px #E0DED5;  
 	margin: 0 auto;
 	width: 90%;
 }
@@ -46,7 +46,6 @@
   margin-top:40px;
   padding:0px 20px;
   margin-top: 4%;
-
 }
 #fb {
   float:right;
@@ -105,12 +104,11 @@
   padding:0 5px;
 	letter-spacing:3px;
 	height: 60px;
-
 }
 /* wygląd elementów - li - wszystkich dzieci elementu - ol */
 #menu > li {
   float:left;
-  width:227px;                                              /* szerokość paska menu */
+  width:203px;                                              /* szerokość paska menu */
   margin-left:1px;
   background-color:rgb(32, 204, 27);
   height:45px;
@@ -218,44 +216,78 @@
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .kontenery {
   background-color:transparent;
-  margin-left: 20px;
+  margin-left: -1.5%;
   margin-right: 5px;
-
 }
-/* Wszystkie span w kontenerze */
-.kontenery h1 {
+/* h1 w span dedykowany do małych kafelków */
+.kontenery .span_maly h1  {
+  font-size: 22px;
+}
+/* h1 w span dedykowany do średnich kafelków */
+.kontenery .span_sredni h1 {
   font-size: 25px;
-
 }
-.span {
+/* h1 w span dedykowany do dużych kafelków */
+.kontenery .span_duzy h1 {
+  font-size: 30px;
+}
+/* h1 w span dedykowany do full kafelków */
+.kontenery .span_full h1 {
+  font-size: 50px;
+}
+/* span jest ogólny dla wszystkich kafelków*/
+.span_maly, .span_sredni, .span_duzy, .span_full {
   float:left;
-  margin-top: -65px;
+  margin-top: -160px;
   margin-left: 18%;
+  margin-right: -2%;
   background-color: white;
-  height:60px;
+  height: 80px;
 }
-.a11, .a11a {
+/* małe kafelki */
+.k_maly {
   float:left;
   width:440px;
-  margin-right: 2%;
+  height: 250px;
+  margin-bottom: 100px;
+  margin-left: 2%;
 }
-.a22, .a22a{
+/* średnie kafelki */
+.k_sredni {
   float:left;
-  width:520px;
-  margin-right: 2%;
+  width:670px;
+  height: 350px;
+  margin-bottom: 100px;
+  margin-left: 2%;
 }
-.a33, .a33a {
+/* duże kafelki */
+.k_duzy {
   float:left;
-  width:520px;
+  width:930px;
+  height: 550px;
+  margin-bottom: 100px;
+  margin-left: 1.5%;
 }
-.a44, a44a {
+/* full kafelki */
+.k_full {
   float:left;
-  width:30%;
-  margin-top: 120px;
+  width:1375px;
+  height: 550px;
+  margin-bottom: 100px;
+  margin-left: 1.5%;
 }
-.a44a {
-  float:left;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,9 +308,9 @@
 /* ----------------------------------------------------------------------------------- S T O P K A ------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #stopka {
-  margin-left:85px;
-  margin-right:85px;
-  background-color:rgb(32, 204, 27);
+  margin-left:70px;
+  margin-right:70px;
+  background-color:rgb(136, 145, 136);
   height:50px;
   text-align:center;
 }
