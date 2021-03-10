@@ -4,10 +4,10 @@
 /*Ustawienia ogólne*/
 .main-container {
 	background: none repeat scroll 0 0 #FFFFFF;
-	border: 4px solid #E5E3DA;
+	/*border: 4px solid #E5E3DA;
 	border-bottom: 1px solid #DDD;
+  box-shadow: 0 0 6px #E0DED5; */  
 	border-radius: 10px;
-	box-shadow: 0 0 6px #E0DED5;  
 	margin: 0 auto;
 	width: 90%;
 }
@@ -141,6 +141,7 @@
 /* wygląd elementu - li - w części rozwijanej */
 #menu > li > ul > li {
   position:relative;
+  z-index: 100;
   background-color:rgba(26, 163, 21, 0.79);
 }
 /* wygląd elementu - a - w części rozwijanej */
@@ -214,61 +215,225 @@
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* -------------------------------------------------------------------------KONTENERY NA ŚRODKU STRONY---------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .kontenery {
   background-color:transparent;
   margin-left: -1.5%;
   margin-right: 5px;
 }
-/* h1 w span dedykowany do małych kafelków */
-.kontenery .span_maly h1  {
-  font-size: 22px;
-}
-/* h1 w span dedykowany do średnich kafelków */
-.kontenery .span_sredni h1 {
-  font-size: 25px;
-}
-/* h1 w span dedykowany do dużych kafelków */
-.kontenery .span_duzy h1 {
-  font-size: 30px;
-}
-/* h1 w span dedykowany do full kafelków */
-.kontenery .span_full h1 {
-  font-size: 50px;
-}
-/* span jest ogólny dla wszystkich kafelków*/
-.span_maly, .span_sredni, .span_duzy, .span_full {
+
+/* utrzymuje porządek w linii */
+.k_newline {
   float:left;
+  width:1440px;
+}
+
+/* ------------------------------h1 w Tytule------------------------------- */
+/* ------------------------------------------------------------------------ */
+.kontenery .span_small h1  {
+  font-size: 22px;
+  font-weight: 100;
+}
+.kontenery .span_medium h1{
+  font-size: 25px;
+  position: relative;
+  z-index: 5;
+  font-weight: 200;
+}
+.kontenery .span_big h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.kontenery .span_full h1 {
+  font-size: 40px;
+  position:relative;
+  z-index: 50;
+  font-weight: 500;
+}
+/* ------------------------------Tytuł------------------------------------- */
+/* ------------------------------------------------------------------------ */
+.span_small {
+  float:left;
+  position:relative;
+  z-index: 10;
   margin-top: -160px;
   margin-left: 18%;
   margin-right: -2%;
   background-color: white;
-  height: 80px;
+  height: 80px;     /* wysokość ramki */
 }
-/* małe kafelki */
-.k_maly {
+.span_medium {
+  float:left;
+  position:relative;
+  z-index: 10;
+  margin-top: -160px;
+  margin-left: 18%;
+  margin-right: -2%;
+  background-color: white;
+  height: 80px;     /* wysokość ramki */
+}
+.span_big {
+  float:left;
+  position:relative;
+  z-index: 10;
+  margin-top: -160px;
+  margin-left: 18%;
+  margin-right: -2%;
+  background-color: white;
+  height: 80px;     /* wysokość ramki */
+  letter-spacing: 6px;
+}
+.span_full {
+  float:left;
+  position:relative;
+  z-index: 10;
+  margin-top: -17%;
+  margin-left: 15%;
+  margin-right: -2%;
+  background-color: white;
+  height: 180px;    /* wysokość ramki */
+  letter-spacing: 10px;
+}
+/* ----------------------------h1 w Kategorie------------------------------ */
+/* ------------------------------------------------------------------------ */
+.span_category_small h1 {
+font-weight:600;
+color: rgb(255, 111, 0);
+}
+.span_category_medium h1 {
+font-weight:bolder;
+color: rgb(255, 111, 0);
+}
+.span_category_big h1 {
+font-weight:bolder;
+color: rgb(255, 111, 0);
+}
+.span_category_full h1 {
+font-weight:bolder;
+color: rgb(255, 111, 0);
+}
+/* ------------------------------Kategorie--------------------------------- */
+/* ------------------------------------------------------------------------ */
+.span_category_small {
+  float:left;
+  position: relative;
+  z-index: 10;
+  margin-top: -78%;
+  margin-left: 4%;
+  margin-right: -2%;
+  background-color: rgba(255, 255, 255, 0.576);
+  height: 40px;
+  font-size: 8px;
+}
+.span_category_medium {
+  float:left;
+  position: relative;
+  z-index: 10;
+  margin-top: -65.5%;
+  margin-left: 4.5%;
+  margin-right: -2%;
+  background-color: rgba(255, 255, 255, 0.576);
+  height: 40px;
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+.span_category_big {
+  float:left;
+  position: relative;
+  z-index: 10;
+  margin-top: -68.7%;
+  margin-left: 3%;
+  margin-right: -2%;
+  background-color: rgba(255, 255, 255, 0.576);
+  height: 50px;
+  font-size: 10px;
+}
+.span_category_full {
+  float:left;
+  position: relative;
+  z-index: 10;
+  margin-top: -46%;
+  margin-left: 3%;
+  margin-right: -2%;
+  background-color: rgba(255, 255, 255, 0.576);
+  height: 50px;
+  font-size: 10px;
+}
+
+/* ------------------------------Licznik----------------------------------- */
+/* ------------------------------------------------------------------------ */
+.span_counter_small {
+  float:right;
+  position: relative;
+  z-index: 10;
+  margin-top: -80%;
+  margin-right: -2%;
+  background-color: rgba(238, 255, 0, 0.479);
+  height: 40px;
+  width: 40px;
+  font-size: 8px;
+  text-align: center;
+}
+.span_counter_medium {
+  float:right;
+  position: relative;
+  z-index: 10;
+  margin-top: -67.2%;
+  margin-right: -2%;
+  background-color: rgba(238, 255, 0, 0.479);
+  height: 40px;
+  width: 40px;
+  font-size: 8px;
+  text-align: center;
+}
+.span_counter_big {
+  float:right;
+  position: relative;
+  z-index: 10;
+  margin-top: -70%;
+  margin-right: -1.5%;
+  background-color: rgba(238, 255, 0, 0.479);
+  height: 50px;
+  width: 50px;
+  font-size: 10px;
+  text-align: center;
+}
+.span_counter_full {
+  float:right;
+  position: relative;
+  z-index: 10;
+  margin-top: -47.3%;
+  margin-right: -1.5%;
+  background-color: rgba(238, 255, 0, 0.479);
+  height: 50px;
+  width: 50px;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* ------------------------------Kafelki----------------------------------- */
+/* ------------------------------------------------------------------------ */
+.k_small {
   float:left;
   width:440px;
   height: 250px;
   margin-bottom: 100px;
   margin-left: 2%;
 }
-/* średnie kafelki */
-.k_sredni {
+.k_medium {
   float:left;
   width:670px;
   height: 350px;
   margin-bottom: 100px;
   margin-left: 2%;
 }
-/* duże kafelki */
-.k_duzy {
+.k_big {
   float:left;
   width:930px;
   height: 550px;
   margin-bottom: 100px;
   margin-left: 1.5%;
 }
-/* full kafelki */
 .k_full {
   float:left;
   width:1375px;
@@ -276,6 +441,7 @@
   margin-bottom: 100px;
   margin-left: 1.5%;
 }
+
 
 
 
