@@ -1,0 +1,12 @@
+div.newsy, div.n {
+    background-color: #2B2B2B;
+    padding: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 160%;
+    position: relative;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
