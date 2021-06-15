@@ -1,8 +1,8 @@
 # my-web
 
-Strona o nowinkach technicznych
+Website about technical news. 
 
-by ***Daniel DAN Olszyk***
+by ***Daniel Olszyk***
 
 https://dan-myweb.netlify.app/
 
